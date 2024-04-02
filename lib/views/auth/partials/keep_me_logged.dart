@@ -4,8 +4,10 @@ import 'package:esc_desktop_application/utils/asset_url.dart';
 import 'package:esc_desktop_application/utils/strings.dart';
 import 'package:esc_desktop_application/utils/theme_color.dart';
 import 'package:esc_desktop_application/utils/label_style.dart';
+import 'package:esc_desktop_application/views/auth/forgot_password.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:get/get.dart';
 
 class KeepMeLogged extends StatelessWidget {
   final bool isChecked;
@@ -48,7 +50,9 @@ class KeepMeLogged extends StatelessWidget {
             child: MouseRegion(
           cursor: SystemMouseCursors.click,
           child: GestureDetector(
-            onTap: () {},
+            onTap: () {
+              Get.to(ForgotPasswordView());
+            },
             child: Container(
               alignment: Alignment.centerRight,
               child: Text(Strings.forgetPassword, style: LabelStyle.primary),

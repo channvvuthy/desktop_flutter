@@ -4,6 +4,7 @@ import 'package:esc_desktop_application/components/ui/danger_alert.dart';
 import 'package:esc_desktop_application/controllers/auth/login_controller.dart';
 import 'package:esc_desktop_application/utils/asset_url.dart';
 import 'package:esc_desktop_application/utils/strings.dart';
+import 'package:esc_desktop_application/views/auth/partials/accept_term_condition.dart';
 import 'package:esc_desktop_application/views/auth/partials/do_not_have_account.dart';
 import 'package:esc_desktop_application/views/auth/partials/genders.dart';
 import 'package:esc_desktop_application/views/auth/partials/have_account_ready.dart';
@@ -75,6 +76,8 @@ class RegisterView extends StatelessWidget {
                               onChanged: (value) {
                                 loginCtl.setPassword(value);
                               }),
+                          _buildSpacer(),
+                          AcceptTermCondition(),
                           _buildSpacer(),
                           ColorButton(
                             height: 50,

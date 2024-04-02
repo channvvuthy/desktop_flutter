@@ -12,4 +12,5 @@ class Strings {
   static const firstName = 'First Name';
   static const lastName = 'Last Name';
   static const haveAccountReady = 'Has account already?';
+  static const String forgotPassword = 'Forgot Password';
 }
